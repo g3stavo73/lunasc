@@ -1,0 +1,12 @@
+
+import system_luna;
+
+class main() {
+
+    fn main() {
+
+        luna.println!("Olá, Mundo!");
+
+    }
+
+}
