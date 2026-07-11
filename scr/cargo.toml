@@ -1,0 +1,25 @@
+[package]
+name = "lunasc"
+version = "0.2.0"
+edition = "2021"
+description = "Luna Script Compiler (lunasc) — a modern, expressive programming language"
+authors = ["Luna Project"]
+license = "MIT"
+repository = "https://github.com/g3stavo73/lunasc"
+keywords = ["compiler", "language", "programming-language"]
+
+[[bin]]
+name = "lunasc"
+path = "src/main.rs"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+
+[profile.dev]
+opt-level = 0
+debug = true
